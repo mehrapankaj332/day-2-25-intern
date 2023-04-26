@@ -8,7 +8,8 @@ const Layout = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+         <div>
+             <li>
             <Link to="/table1">
               Table1
             </Link>
@@ -18,6 +19,7 @@ const Layout = () => {
                Table2
             </Link>
           </li>
+         </div>
         </ul>
       </nav>
 

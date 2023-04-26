@@ -31,6 +31,7 @@ const Table1=({data1})=>{
 
 return (
     <>
+         
          <table className="table table-dark table-hover">
           <TableHeder />
           <TableData handleEdit={handleEdit}

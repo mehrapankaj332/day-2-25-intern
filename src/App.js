@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Table1 from './Pages/Table1';
 import Table2 from './Pages/Table2';
@@ -22,14 +22,14 @@ function App() {
   
 
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route path="table1" element={<Table1 data1={data1} />} />
-        <Route path="table2" element={<Table2 data2={data2} />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+    <>
+        <Routes>
+            <Route path="/" element={<div className='container' style={{display:"flex",justifyContent:"space-between",marginTop:"40px"}}><Layout/></div>}>
+                <Route path="table1" element={<div><Table1 data1={data1} /></div>} />
+                <Route path="table2" element={<div><Table2 data2={data2} /></div>} />
+            </Route>
+        </Routes>
+  </>
   );
 }
 
